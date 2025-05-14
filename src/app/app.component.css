@@ -1,0 +1,78 @@
+/* Wrapper for the entire content */
+.time-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 20px; /* Add space between the two time divs */
+}
+
+/* Container for each time block */
+.time-block {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  width: 500px; /* Adjust width */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header styling */
+h2 {
+  font-size: 24px;
+  color: #00ff00;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Local Time */
+.local-time {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00ff00; /* Local time in green */
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Dropdown */
+select {
+  width: 250px; /* Decreased width of the select */
+  padding: 8px;
+  margin-top: 15px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #2e2e2e;
+  color: #00ff00;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+select:hover {
+  background-color: #3a3a3a;
+}
+
+/* Selected Time */
+.selected-time {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffeb3b; /* Bright yellow for selected time */
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  .time-container {
+    flex-direction: column; /* Stack vertically */
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

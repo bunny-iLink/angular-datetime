@@ -1,0 +1,16 @@
+<div class="time-container">
+  <!-- Local Time Block -->
+  <div class="time-block">
+    <h2>Local Time</h2>
+    <div class="local-time">{{ localTime }}</div>
+  </div>
+
+  <!-- Selected Time Block -->
+  <div class="time-block">
+    <h2>Selected Timezone</h2>
+    <select [(ngModel)]="selectedTimezone" (change)="fetchSelectedTime(selectedTimezone)">
+      <option *ngFor="let tz of timezones" [value]="tz">{{ tz }}</option>
+    </select>
+    <div class="selected-time">{{ selectedTime }}</div>
+  </div>
+</div>

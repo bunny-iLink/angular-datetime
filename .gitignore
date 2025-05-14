@@ -1,0 +1,42 @@
+# Node modules
+/node_modules/
+
+# Build output
+/dist/
+/out-tsc/
+
+# Angular specific
+.angular/
+.angular-cache/
+
+# Environment files (optional, if you don't want to track secrets)
+/src/environments/environment*.ts
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Compiled output
+*.js
+*.js.map
+
+# Coverage reports
+/coverage/
+
+# Misc
+/tmp/
+*.swp
+*.bak
+*.tmp
