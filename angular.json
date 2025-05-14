@@ -89,6 +89,12 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://bunny-iLink.github.io/angular-datetime/"
+          }
         }
       }
     }
